@@ -47,6 +47,9 @@ table {
     border-spacing: 0;
 }
 
+main {
+    display: block;
+}
 body {
     background: #fafafa url(../images/bg-circles.gif) no-repeat 50% 35px;
     font: 14px/18px Arial, Helvetica, sans-serif;
@@ -70,17 +73,20 @@ a:hover {
 
 .page {
     background: url(../images/bg-page.gif) repeat;
-    height: 500px;
+    margin: 0 0 18px;
     -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.2);
     -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.2);
     box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.2);
 }
 
 #header {
-    padding: 14px 1px 0;
+    padding: 14px 1px 44px;
 }
 #header .holder:after,
-.message-form:after {
+#footer:after,
+.message-form:after,
+#nav ul:after,
+.intro:after{
     display: block;
     content: '';
     clear: both;
@@ -141,6 +147,7 @@ a:hover {
 }
 
 .message-form form {
+    display: none;
     position: absolute;
     left: 0;
     right: 0;
@@ -179,4 +186,217 @@ a:hover {
     text-transform: uppercase;
     font: 12px/18px Arial, Helvetica, sans-serif;
     cursor: pointer;
+}
+
+#nav {
+    background: #65d30c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+#nav ul {
+    padding: 0 0 0 6px;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    color: #fff;
+    float: left;
+    padding: 17px 28px 14px 33px;
+}
+
+#nav .active a {
+    border-left: 3px solid #fff;
+    padding-left: 30px;
+    background: url(../images/bg-nav-active.png) no-repeat 100% 0;
+}
+#nav .discounts a {
+    width: 124px;
+    height: 104px;
+    text-indent: -9999px;
+    margin: -28px 0 -28px 18px;
+    padding: 0 !important;
+    border: 0 !important;
+    background: url(../images/text-discount.png) no-repeat !important;
+}
+
+#main {
+    padding: 0 42px 0 48px;
+}
+.icons {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    font-size: 24px;
+}
+
+.icons li {
+    position: absolute;
+    width: 276px;
+    display: table;
+}
+
+.icons li:after {
+    position: absolute;
+    left: 95px;
+    width: 182px;
+    top: 50%;
+    content: '';
+    height: 1px;
+}
+.icons li .ico {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 94px;
+    height: 94px;
+    -webkit-border-radius: 47px;
+    -moz-border-radius: 47px;
+    border-radius: 47px;
+}
+.icons li .link {
+    display: table-cell;
+    padding: 0 0 0 6px;
+    letter-spacing: 1px;
+}
+.icons li .link a {
+    float: left;
+    margin: 64px 0 0;
+}
+.icons li.blue {
+    top: 7px;
+    left: 83px;
+}
+.icons li.pink {
+    top: 158px;
+    left: 0;
+}
+.icons li.green {
+    top: 309px;
+    left: 40px;
+}
+.icons li.orange {
+    top: 461px;
+    left: 20px;
+}
+.icons li.blue .ico,
+.icons li.blue:after {background: #00a7ea;}
+.icons li.blue .link a {color: #00a7ea;}
+
+.icons li.pink .ico,
+.icons li.pink:after {background: #ea0088;}
+.icons li.pink .link a {color: #ea0088;}
+
+.icons li.green .ico,
+.icons li.green:after {background: #9cea00;}
+.icons li.green .link a {color: #9cea00;}
+
+.icons li.orange .ico,
+.icons li.orange:after {background: #f8941d;}
+.icons li.orange .link a {color: #f8941d;}
+
+.trainer {
+    float: right;
+    width: 748px;
+}
+.trainer .photo {
+    padding: 43px 0 0;
+    float: left;
+}
+.trainer .photo img {
+    display: block;
+}
+.trainer .greeting {
+    float: right;
+    width: 382px;
+    padding: 24px 12px 14px 14px;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 3px 6px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 3px 6px 0px rgba(50, 50, 50, 0.5);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.trainer .greeting .content {
+    padding: 0 0 9px 5px;
+    border-bottom: 1px solid #dad9d9;
+    color: #7f7e7e;
+    font-style: italic;
+    margin: 0 0 13px;
+}
+.trainer .greeting h1 {
+    font: 24px Arial, Helvetica, sans-serif;
+    color: #f8941d;
+    margin: 0 0 15px;
+}
+
+.trainer .greeting p {
+    margin: 0 0 18px;
+}
+
+.trainer .slogan {
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 7px 0 0;
+}
+.trainer .slogan .line {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 3px;
+}
+.trainer .slogan .line span {
+    float: right;
+}
+.trainer .slogan .line1 span {
+    font-size: 18px;
+    line-height: 13px;
+    background: #0c2f67;
+    padding: 7px 0 0;
+    margin: 0 -3px 0 0;
+    letter-spacing: 4px;
+    min-width: 147px;
+}
+
+.trainer .slogan .line2 span {
+    font-size: 36px;
+    line-height: 16px;
+    background: #f8941d;
+    padding: 19px 0px 3px 0;
+    margin: 0 -12px 0 0;
+    letter-spacing: 8px;
+    min-width: 180px;
+}
+
+.trainer .slogan .line3 span {
+    font-size: 40px;
+    line-height: 18px;
+    background: #65d30c;
+    padding: 19px 0px 3px 0;
+    margin: 0 -5px 0 0;
+    letter-spacing: 0;
+    min-width: 195px;
+}
+#footer {
+    padding: 0 0 10px 4px;
+}
+.produced {
+    float: right;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 0 0 0 10px;
+    margin: 20px 2px 0 0;
+    word-spacing: 1px;
+    text-decoration: none;
+    color: #00a7ea;
+    border-bottom: 1px solid #00a7ea;
+    background: url(../images/bg-arrow.png) no-repeat 0 6px;
+}
+.produced:hover {
+    text-decoration: none;
+    border-bottom-color: transparent;
 }
