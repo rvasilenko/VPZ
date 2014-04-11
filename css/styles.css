@@ -323,6 +323,16 @@ a:hover {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    position: relative;
+}
+.trainer .greeting:after {
+    content: '';
+    position: absolute;
+    left: -97px;
+    top: 52px;
+    width: 102px;
+    height: 42px;
+    background: url(../images/bg-corner.png) no-repeat;
 }
 .trainer .greeting .content {
     padding: 0 0 9px 5px;
@@ -433,6 +443,9 @@ a:hover {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    -webkit-box-shadow: inset 0px 2px 6px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow:    inset 0px 2px 6px 0px rgba(50, 50, 50, 0.35);
+    box-shadow:         inset 0px 2px 6px 0px rgba(50, 50, 50, 0.35);
 }
 .column .box {
     -webkit-box-shadow: inset 1px 6px 8px 0px rgba(50, 50, 50, 0.35);
@@ -489,7 +502,7 @@ a:hover {
     bottom: 0;
     z-index: 1;
     background: #f8941d;
-    font-size: 12px;
+    font-size: 10px;
     text-align: right;
 }
 .media-list .btn-more.green {
@@ -531,10 +544,17 @@ a:hover {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
+
     font: 12px/15px Arial, Helvetica, sans-serif;
     padding: 4px 15px;
     color: #bbb;
     outline: none;
+}
+.request-form input[type=text],
+.request-form input[type=email] {
+    -webkit-box-shadow: inset 0px 2px 6px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow:    inset 0px 2px 6px 0px rgba(50, 50, 50, 0.35);
+    box-shadow:         inset 0px 2px 6px 0px rgba(50, 50, 50, 0.35);
 }
 .request-form textarea {
     resize: none;
