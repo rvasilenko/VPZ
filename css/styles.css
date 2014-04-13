@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'AnastasiaScriptRegular';
+    src: url('../fonts/anastasiascript.eot');
+    src: url('../fonts/anastasiascript.eot') format('embedded-opentype'),
+    url('../fonts/anastasiascript.woff') format('woff'),
+    url('../fonts/anastasiascript.ttf') format('truetype'),
+    url('../fonts/anastasiascript.svg#AnastasiaScriptRegular') format('svg');
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -318,7 +327,7 @@ a:hover {
 .trainer .greeting {
     float: right;
     width: 382px;
-    padding: 24px 12px 14px 14px;
+    padding: 21px 12px 14px 14px;
     -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow:    0px 3px 6px 0px rgba(50, 50, 50, 0.5);
     box-shadow:         0px 3px 6px 0px rgba(50, 50, 50, 0.5);
@@ -344,9 +353,9 @@ a:hover {
     margin: 0 0 13px;
 }
 .trainer .greeting h1 {
-    font: 24px Arial, Helvetica, sans-serif;
+    font: 30px/32px AnastasiaScriptRegular, Arial, Helvetica, sans-serif;
     color: #f8941d;
-    margin: 0 0 15px;
+    margin: 0 0 14px;
 }
 
 .trainer .greeting p {
