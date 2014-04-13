@@ -100,7 +100,8 @@ a:hover {
 .widgets .holder:after,
 .media-list:after,
 #content:after,
-.row:after {
+.row:after,
+.address:after {
     display: block;
     content: '';
     clear: both;
@@ -608,6 +609,12 @@ a:hover {
     color: #f8941d;
     margin: 0 0 13px;
 }
+#content h2 {
+    font-size: 24px;
+    line-height: normal;
+    color: #f8941d;
+    margin: 0 0 9px;
+}
 .trainers-list {
     color: #7f7e7e;
     font-size: 12px;
@@ -747,6 +754,47 @@ a:hover {
 }
 .row.indent3 img.alignright {
     margin: 21px 0 0 -10px;
+}
+.contact-info {
+    padding: 0 76px 0 0;
+}
+.address {
+    margin: 0 0 18px;
+}
+.blue {
+   color: #00a7ea;
+}
+.pink {
+    color: #ea0088;
+}
+.green {
+    color: #65d30c;
+}
+.orange {
+    color: #f8941d;
+}
+.address dt {
+    float: left;
+    font-weight: bold;
+    padding: 0 7px 0 0;
+    min-width: 60px;
+}
+.address dd {
+    clear: right;
+}
+.map-holder {
+    width: 810px;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+#content .map-holder img {
+    border: 0;
+}
+#content .map-holder .trainer-photo {
+    position: absolute;
+    right: -84px;
+    bottom: -21px;
 }
 #footer {
     padding: 0 0 10px 4px;
