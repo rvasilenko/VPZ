@@ -603,7 +603,8 @@ a:hover {
     margin: 0 0 50px;
     min-height: 524px;
 }
-#content h1 {
+#content h1,
+#content .schedule h2 {
     font-size: 30px;
     line-height: normal;
     color: #f8941d;
@@ -730,8 +731,9 @@ a:hover {
     overflow: hidden;
     margin: 0 0 28px;
 }
-.promo h2 {
+#content .promo h2 {
     font-weight: bold;
+    font-size: 14px;
     text-transform: uppercase;
 }
 .promo h2 a {
@@ -795,6 +797,89 @@ a:hover {
     position: absolute;
     right: -84px;
     bottom: -21px;
+}
+.media-block {
+    width: 1072px;
+    margin: 0 -44px 0 0;
+    padding: 0 0 32px;
+    overflow: hidden;
+    position: relative;
+}
+.media-block:after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 512px;
+    width: 1px;
+    background: #65d30c;
+}
+.area {
+    float: left;
+    width: 440px;
+    padding: 0 20px 0 0;
+}
+
+.media-block .area {
+    width: 500px;
+    padding: 0 36px 0 0;
+}
+.schedule .area {
+    width: 540px;
+    padding: 0;
+}
+.schedule .area:first-child {
+    width: 440px;
+    padding: 0 20px 0 0;
+}
+.media-block li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 5px;
+}
+a.video {
+    position: relative;
+    display: block;
+}
+a.video:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 49px;
+    height: 42px;
+    margin: -21px 0 0 -25px;
+    background: url(../images/btn-play.png) no-repeat;
+    content: '';
+}
+.classes .place {
+    display: block;
+    font-weight: bold;
+}
+.classes .day {
+    display: block;
+    color: #010101;
+}
+.classes .info {
+    margin: 0 0 18px;
+}
+.price {
+    margin: 0 0 28px;
+}
+.bonus {
+    padding: 34px 0 0 3px;
+    position: relative;
+}
+.bonus .caption {
+    position: absolute;
+    left: 160px;
+    top: 121px;
+    font-size: 48px;
+    line-height: 39px;
+    color: #f8941d;
+    text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 0px 1px #fff, -2px -2px 0 #fff, 1px -3px 0 #fff, -1px 0px 0 #fff;
+}
+#content .bonus img {
+    border: 0;
 }
 #footer {
     padding: 0 0 10px 4px;
