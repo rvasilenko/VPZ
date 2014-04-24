@@ -435,19 +435,20 @@ a:hover {
 .column {
     width: 258px;
 }
-.widgets h3 {
+.widgets h3,
+.widgets h2{
     font-size: 14px;
     line-height: 18px;
     margin: 0 0 8px;
     text-transform: uppercase;
 }
+.widgets h3 {
+    text-align: center;
+}
 .widgets h3 strong {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 24px;
-}
-.widgets .column h3 {
-    text-align: center;
 }
 .box {
     background: #fff;
@@ -503,6 +504,12 @@ a:hover {
 }
 .media-list .photo-container img {
     vertical-align: top;
+}
+.media-list .slideshow {
+    width: 204px;
+    height: 97px;
+    overflow: hidden;
+    position: relative;
 }
 .media-list .btn-more {
     position: absolute;
